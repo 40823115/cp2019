@@ -1,9 +1,45 @@
 <h1>About</h1>
 <p><a href="http://mde.tw/cp2019">http://mde.tw/cp2019</a> </p>
-<p><a href="/downloads/半生已過.pdf">test .pdf</a></p>
 <p><img alt="" height="360" src="/images/122.jpg" width="360"/></p>
 <h6>迴圈程式</h6>
 <p>git: <a href="https://gist.github.com/40823115/d7ccd4aff9304f9f69b740c76e39534b">https://gist.github.com/40823115/d7ccd4aff9304f9f69b740c76e39534b</a></p>
 <p>dart: <a href="https://dartpad.dartlang.org/?id=d7ccd4aff9304f9f69b740c76e39534b">https://dartpad.dartlang.org/?id=d7ccd4aff9304f9f69b740c76e39534b</a></p>
 <p></p>
 <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=d7ccd4aff9304f9f69b740c76e39534b" width="800"></iframe></p>
+<h1>W10</h1>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823113&gh_repo=cp2019ag3&gh_path=downloads/dart-ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823113&gh_repo=cp2019ag3&gh_path=downloads/dart-ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823113&gh_repo=cp2019ag3&gh_path=downloads/dart-ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getDart('cf')">temperature</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button> <button onclick="getFlutter('flutter_mine1')">踩地雷1</button> <button onclick="getFlutter('flutter_mine2')">踩地雷2</button> <button onclick="getFlutter('flutter_mine3')">踩地雷3</button> <button onclick="getFlutter('flutter_mine4')">踩地雷4</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
