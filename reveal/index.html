@@ -57,14 +57,11 @@ Created by [40823115](http://lab.kmol.info/)
 						
 <section data-markdown>
     <script type="text/template">
-# 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+# 計算機程式課程目錄
+* [溫度轉換](https://40823115.github.io/cp2019/reveal/index.html#/2)
+*[重量轉換](https://40823115.github.io/cp2019/reveal/index.html#/2/1)
+*  [各國國旗](https://40823115.github.io/cp2019/reveal/index.html#/2/2)
+* [期末心得](https://40823115.github.io/cp2019/reveal/index.html#/2/3)
 
     </script>
 </section>
@@ -75,12 +72,11 @@ Created by [40823115](http://lab.kmol.info/)
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
+# 溫度轉換
+<iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823115&gh_repo=cp2019&gh_path=downloads/dart_ex/f-s&theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
 
-$$I = \int \rho R^{2} dV$$
+
     </script>
 </section>
 
@@ -90,32 +86,8 @@ $$I = \int \rho R^{2} dV$$
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
-
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
+ # 重量轉換
+<iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823115&gh_repo=cp2019&gh_path=downloads/dart_ex/kg-bl&theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </script>
 </section>
 
@@ -124,11 +96,17 @@ make.start()
 						
 <section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
+ # 各國國旗
+<iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823115&gh_repo=cp2019&gh_path=downloads/dart_ex/flag&theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### 導入影片 template
+    </script>
+</section>
 
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<section data-markdown>
+    <script type="text/template">
+# 期末心得
+在這一個學期當中雖然我無法跟上老師所教導的地方，但是我也一直努力地想跟上老師所教導的地方，今過這一個學期後我學會了把同學的東西複製到自己的網站上。我很高興能上嚴老師的課，有很多在後面跟不上其他同學的人，但是老師從不放棄我們，一直想辦法把我後半部的同學拉起來。</iframe>
+
     </script>
 </section>
 
